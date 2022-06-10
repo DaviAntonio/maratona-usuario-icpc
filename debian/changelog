@@ -1,0 +1,6 @@
+maratona-usuario-icpc (20220607) jammy; urgency=low
+
+  * Initial release.
+    - emancipate package from maratona-meta
+
+ -- Davi Antônio da Silva Santos <antoniossdavi@gmail.com>  Tue, 07 Jun 2022 14:17:22 -0300
