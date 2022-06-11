@@ -1,7 +1,7 @@
 Source: maratona-usuario-icpc
 Section: admin
 Priority: optional
-Maintainer: Davi Antônio da Silva Santos <antoniossdavi@gmail.com>
+Maintainer: Bruno César Ribas <bruno.ribas@unb.br>
 Build-Depends: debhelper-compat (= 13)
 Standards-Version: 4.6.0.1
 Vcs-Git: https://github.com/DaviAntonio/maratona-usuario-icpc.git
