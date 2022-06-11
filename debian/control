@@ -4,8 +4,8 @@ Priority: optional
 Maintainer: Bruno César Ribas <bruno.ribas@unb.br>
 Build-Depends: debhelper-compat (= 13)
 Standards-Version: 4.6.0.1
-Vcs-Git: https://github.com/DaviAntonio/maratona-usuario-icpc.git
-Vcs-Browser: https://github.com/DaviAntonio/maratona-usuario-icpc
+Vcs-Git: https://github.com/maratona-linux/maratona-usuario-icpc.git
+Vcs-Browser: https://github.com/maratona-linux/maratona-usuario-icpc
 
 Package: maratona-usuario-icpc
 Architecture: all

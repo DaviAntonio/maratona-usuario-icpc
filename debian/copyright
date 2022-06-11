@@ -1,7 +1,7 @@
 Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
 Upstream-Name: maratona-usuario-icpc
-Upstream-Contact: Davi Antônio da Silva Santos <antoniossdavi@gmail.com>
-Source: <https://github.com/DaviAntonio/maratona-usuario-icpc>
+Upstream-Contact: Bruno César Ribas <bruno.ribas@unb.br>
+Source: <https://github.com/maratona-linux/maratona-usuario-icpc>
 #
 # Uncomment the following 2 lines to enable uscan to exclude non-DFSG components
 # Files-Excluded: command/non-dfsg.exe
