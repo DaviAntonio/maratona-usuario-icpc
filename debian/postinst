@@ -15,28 +15,28 @@ set -e
 # the debian-policy package
 
 case "$1" in
-    configure)
-	    if id --user icpc >/dev/null 2>/dev/null; then
-		    # if user exists, check if it can sudo
-		    if id --groups --name icpc | grep --quiet sudo; then
-			    echo "User icpc has sudo! Trying to remove it"
-			    if gpasswd -d icpc sudo; then
-				    echo "User icpc lost its sudo rights"
-			    else
-				    echo "Could not remove user icpc sudo rights!"
-				    exit 2
-			    fi
-		    fi
+	configure)
+		if id --user icpc >/dev/null 2>/dev/null; then
+			# if user exists, check if it can sudo
+			if id --groups --name icpc | grep --quiet sudo; then
+				echo "User icpc has sudo! Trying to remove it"
+				if gpasswd -d icpc sudo; then
+					echo "User icpc lost its sudo rights"
+				else
+					echo "Could not remove user icpc sudo rights!"
+					exit 2
+				fi
+			fi
 
-		    pass=$(echo -n 'icpcd' | makepasswd --clearfrom - --crypt-md5 | awk '{print $NF}')
-		    if usermod --home /home/icpc --password "${pass}" --shell /bin/bash --gid users icpc; then
-			    echo "User icpc already existed"
-			    echo "User icpc has had its password changed in order to encourage a home cleaning"
-		    else
-			    echo "Failed to update user icpc's password"
-			    exit 3
-		    fi
-	    fi
+			pass=$(echo -n 'icpcd' | makepasswd --clearfrom - --crypt-md5 | awk '{print $NF}')
+			if usermod --home /home/icpc --password "${pass}" --shell /bin/bash --gid users icpc; then
+				echo "User icpc already existed"
+				echo "User icpc has had its password changed in order to encourage a home cleaning"
+			else
+				echo "Failed to update user icpc's password"
+				exit 3
+			fi
+		fi
 
 	    # Run home cleaning script on boot
 	    # The .clean-home file on the icpc's home will force a home cleaning
@@ -53,15 +53,15 @@ case "$1" in
 		    echo "Failed to create /home/icpc"
 		    exit 4
 	    fi
-    ;;
+	    ;;
 
     abort-upgrade|abort-remove|abort-deconfigure)
-    ;;
+	    ;;
 
     *)
-        echo "postinst called with unknown argument \`$1'" >&2
-        exit 1
-    ;;
+	    echo "postinst called with unknown argument \`$1'" >&2
+	    exit 1
+	    ;;
 esac
 
 # dh_installdeb will replace this with shell code automatically

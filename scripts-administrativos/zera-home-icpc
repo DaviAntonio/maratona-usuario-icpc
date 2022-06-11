@@ -75,10 +75,10 @@ touch /home/icpc/.var/app/com.visualstudio.code/config/flatpak-vscode-first-run
 mkdir -p /home/icpc/Desktop/
 
 desktop_files=(
-"/usr/share/applications/cppreference.desktop"
-"/usr/share/applications/javadoc.desktop"
-"/usr/share/applications/python3doc.desktop"
-"/usr/share/applications/kotlindoc.desktop"
+	"/usr/share/applications/cppreference.desktop"
+	"/usr/share/applications/javadoc.desktop"
+	"/usr/share/applications/python3doc.desktop"
+	"/usr/share/applications/kotlindoc.desktop"
 )
 
 readonly desktop_files
