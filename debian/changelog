@@ -1,3 +1,9 @@
+maratona-usuario-icpc (20220627) jammy; urgency=medium
+
+  * Replace system's JDK with flathub's
+
+ -- Davi Antônio da Silva Santos <antoniossdavi@gmail.com>  Mon, 27 Jun 2022 23:10:38 -0300
+
 maratona-usuario-icpc (20220610) jammy; urgency=medium
 
   * Change maintainer to Bruno César Ribas
