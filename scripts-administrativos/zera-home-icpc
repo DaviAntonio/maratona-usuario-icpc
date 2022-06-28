@@ -100,7 +100,7 @@ echo "yes" > /home/icpc/.config/gnome-initial-setup-done
 # Configurar JDK/JRE do sistema para IntelliJ
 # A IDE pode acessar arquivos normais (filesystem=host)
 # (ver https://docs.flatpak.org/en/latest/sandbox-permissions.html)
-FLATPAK_JAVA_PATH="/var/run/host/usr/lib/jvm/java-11-openjdk-amd64"
+FLATPAK_JAVA_PATH="/usr/lib/sdk/openjdk11/jvm/openjdk-11"
 
 # VSCode
 # O caminho só existirá se o maratona-vscode-extensions estiver instalado
