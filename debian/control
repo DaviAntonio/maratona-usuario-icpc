@@ -9,7 +9,7 @@ Vcs-Browser: https://github.com/maratona-linux/maratona-usuario-icpc
 
 Package: maratona-usuario-icpc
 Architecture: all
-Depends: ${misc:Depends}, maratona-linguagens-doc, makepasswd, maratona-vscode-extensions, slay, dbus-x11
+Depends: ${misc:Depends}, maratona-linguagens-doc, makepasswd, maratona-vscode-extensions, maratona-kairos, slay, dbus-x11
 Conflicts: maratona-skel
 Description: Pacote que cria um usuário icpc para o competidor da maratona
  Este pacote cria o usuário sem privilégios administrativos para competição.
