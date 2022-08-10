@@ -100,7 +100,7 @@ echo "yes" > /home/icpc/.config/gnome-initial-setup-done
 # Configurar JDK/JRE do sistema para IntelliJ
 # A IDE pode acessar arquivos normais (filesystem=host)
 # (ver https://docs.flatpak.org/en/latest/sandbox-permissions.html)
-FLATPAK_JAVA_PATH="/usr/lib/sdk/openjdk11/jvm/openjdk-11"
+FLATPAK_JAVA_PATH="/usr/lib/sdk/openjdk17/jvm/openjdk-17"
 
 # VSCode
 # O caminho só existirá se o maratona-vscode-extensions estiver instalado
@@ -112,7 +112,7 @@ fi
 # IntelliJ
 # É normal o link aparecer quebrado, já que é um caminho usado apenas pelo Flatpak
 mkdir '/home/icpc/.jdks'
-ln -s "${FLATPAK_JAVA_PATH}" '/home/icpc/.jdks/java-11-openjdk-amd64'
+ln -s "${FLATPAK_JAVA_PATH}" '/home/icpc/.jdks/java-17-openjdk-amd64'
 
 # Mudando o dono, pois este script roda como root, então o que ele cria
 # pertence ao root, o que não deve acontecer.
