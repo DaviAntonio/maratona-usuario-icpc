@@ -1,3 +1,13 @@
+maratona-usuario-icpc (20220831) jammy; urgency=medium
+
+  * Mask systemd-oomd before the installation
+    - the service still insisted on killing the installation script on
+      machines with <= 4 GiB RAM, so it must be disabled
+    - the original configuration should be restored once the package is
+      removed
+
+ -- Davi Antônio da Silva Santos <antoniossdavi@gmail.com>  Wed, 31 Aug 2022 16:40:44 -0300
+
 maratona-usuario-icpc (20220830) jammy; urgency=medium
 
   * Depend on maratona-kairos
