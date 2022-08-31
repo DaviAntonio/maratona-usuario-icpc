@@ -1,3 +1,16 @@
+maratona-usuario-icpc (20220830) jammy; urgency=medium
+
+  * Depend on maratona-kairos
+  * Upgrade flatpak's JDK version from 11 to 17
+    - Use flatpaked JDK to fix glibc incompatibilities
+  * maratona-usuario-icpc.service: BEFORE gdm.service unit
+  * Update IntelliJ, CLion and PyCharm preferences
+    - PyCharm Community 2022.1.3
+    - CLion 2022.1.3
+    - Intellij 2022.1.4
+
+ -- Davi Antônio da Silva Santos <antoniossdavi@gmail.com>  Tue, 30 Aug 2022 22:55:26 -0300
+
 maratona-usuario-icpc (20220627) jammy; urgency=medium
 
   * Replace system's JDK with flathub's
