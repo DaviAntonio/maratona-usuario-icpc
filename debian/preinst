@@ -12,6 +12,18 @@ set -e
 
 case "$1" in
 	install|upgrade)
+		if systemctl stop systemd-oomd.service; then
+			echo "Successfully stopped systemd-oomd"
+
+			if systemctl mask --now systemd-oomd.service; then
+				echo "Successfully masked systemd-oomd"
+			else
+				echo "Failed to mask systemd-oomd"
+				exit 2
+			fi
+		else
+			echo "Failed to find or stop systemd-oomd"
+		fi
 		;;
 
 	abort-upgrade)
