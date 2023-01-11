@@ -1,0 +1,24 @@
+<application>
+  <component name="PropertyService"><![CDATA[{
+  "keyToString": {
+    "CWM_LOGGING_VERSION": "1",
+    "NonModalCommitCustomization.IsApplied": "true",
+    "ask.about.ctrl.y.shortcut.v2": "true",
+    "bundled.plugins.list.saved.version": "CL-221.5921.27",
+    "evlsprt3.221": "24",
+    "fileTypeChangedCounter": "1",
+    "input.method.disabler.muted": "true",
+    "tasks.pass.word.conversion.enforced": "true"
+  },
+  "keyToStringList": {
+    "fileTypeDetectors": [
+      "com.intellij.ide.scratch.ScratchFileServiceImpl$Detector",
+      "com.jetbrains.cidr.lang.OCHeaderFileTypeDetector",
+      "com.intellij.javascript.debugger.sourcemap.SourceMapFileType$MyFileTypeDetector",
+      "com.intellij.database.vfs.DbStorageFileType$Detector",
+      "com.intellij.docker.dockerFile.DockerFileTypeDetector",
+      "org.jetbrains.plugins.textmate.TextMateFileType$TextMateFileDetector"
+    ]
+  }
+}]]></component>
+</application>

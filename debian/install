@@ -1,16 +1,16 @@
 # See dh_install(1)
 
 # Configuration files from IDEs and editors
-maratona-editores-config/* usr/share/maratona-usuario-icpc/editores-config/
+editores-config usr/share/maratona-usuario-icpc
 
 # Systemd service to clean home on reboot
 usuario-icpc-service/*.service lib/systemd/system/
 
 # Scripts used to clean user icpc's home
-scripts-administrativos/zera-home-icpc usr/sbin/
-scripts-administrativos/icpc-clean-homed usr/sbin/
-scripts-administrativos/clean-icpc-on-reboot usr/bin/
-scripts-administrativos/clean-home-now usr/bin/
+scripts-administrativos/zera-home-icpc usr/sbin
+scripts-administrativos/icpc-clean-homed usr/sbin
+scripts-administrativos/clean-icpc-on-reboot usr/bin
+scripts-administrativos/clean-home-now usr/bin
 
 # Policy Kit keyfiles
 polkit-1/*pkla etc/polkit-1/localauthority/90-mandatory.d/
