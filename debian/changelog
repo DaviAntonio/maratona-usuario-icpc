@@ -1,3 +1,14 @@
+maratona-usuario-icpc (20230113) jammy; urgency=medium
+
+  * Depend on native packages instead of flatpak
+    - updating the .desktop files with those included in the native
+      packages
+    - removing the hacks used to bypass the Flatpak sandbox
+  * Remove commented code in the ICPC user script
+  * Update copyright and author's information
+
+ -- Davi Antônio da Silva Santos <antoniossdavi@gmail.com>  Sat, 13 Jan 2023 00:31:02 -0300
+
 maratona-usuario-icpc (20220831) jammy; urgency=medium
 
   * Mask systemd-oomd before the installation
