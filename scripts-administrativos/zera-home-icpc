@@ -60,25 +60,13 @@ echo "OK"
 
 # Os arquivos de configuração dos editores do maratona estão no diretório
 # '/usr/share/maratona-usuario-icpc/editores-config' que são mantidos no skel e
-# quando o usuario icpc é recriado, é copiado para a home do icpc, extraído e
-# excluído (o .tar.gz)
+# quando o usuario icpc é recriado, é copiado para a home do icpc
 printf "\nCopying IDE configurations\n"
 find /usr/share/maratona-usuario-icpc/editores-config \
 	-maxdepth 1 \
 	-type d \
 	-exec cp --archive --verbose {} /home/icpc \;
-#for config in /usr/share/maratona-usuario-icpc/editores-config/*; do
-#	if [[ ! -d "${config}" ]]; then
-#		printf "Could not find directory '%s'\n" "${config}"
-#		continue
-#	fi
-#	cp --archive --verbose "${config}" /home/icpc
-#done
 printf "OK\n"
-
-# criando arquivo para vscode não mostrar warning ao iniciar pela primeira vez
-# mkdir -p /home/icpc/.var/app/com.visualstudio.code/config/
-# touch /home/icpc/.var/app/com.visualstudio.code/config/flatpak-vscode-first-run
 
 # Copiando os atalhos da documentação para o o Desktop
 # Os atalhos precisam ser marcados como confiáveis na base de dados do GIO, e
@@ -113,11 +101,6 @@ mkdir -p /home/icpc/.config
 echo "yes" > /home/icpc/.config/gnome-initial-setup-done
 printf "OK\n"
 
-# Configurar JDK/JRE do sistema para IntelliJ
-# A IDE pode acessar arquivos normais (filesystem=host)
-# (ver https://docs.flatpak.org/en/latest/sandbox-permissions.html)
-# FLATPAK_JAVA_PATH="/usr/lib/sdk/openjdk17/jvm/openjdk-17"
-
 # VSCode
 # O caminho só existirá se o maratona-vscode-extensions estiver instalado
 printf "\nCopying Visual Studio Code extensions\n"
@@ -129,10 +112,6 @@ else
 fi
 printf "OK\n"
 
-# IntelliJ
-# É normal o link aparecer quebrado, já que é um caminho usado apenas pelo Flatpak
-# mkdir '/home/icpc/.jdks'
-# ln -s "${FLATPAK_JAVA_PATH}" '/home/icpc/.jdks/java-17-openjdk-amd64'
 # Configurar repositório Maven
 printf "\nConfiguring Maven repository\n"
 echo "export MAVEN_REPOSITORY='/home/icpc/.m2/repository'" >> /home/icpc/.bashrc
