@@ -64,6 +64,7 @@ echo "OK"
 printf "\nCopying IDE configurations\n"
 find /usr/share/maratona-usuario-icpc/editores-config \
 	-maxdepth 1 \
+	-mindepth 1 \
 	-type d \
 	-exec cp --archive --verbose {} /home/icpc \;
 printf "OK\n"
