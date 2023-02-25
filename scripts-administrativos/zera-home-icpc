@@ -70,9 +70,7 @@ find /usr/share/maratona-usuario-icpc/editores-config \
 printf "OK\n"
 
 # Copiando os atalhos da documentação para o o Desktop
-# Os atalhos precisam ser marcados como confiáveis na base de dados do GIO, e
-# para isso, o DBUS deve estar funcionando, e o usuário que usará os atalhos
-# deve ser o responsável por essa ação
+printf "\nCopying .desktop files\n"
 mkdir -p /home/icpc/Desktop/
 
 desktop_files=(
@@ -83,17 +81,6 @@ desktop_files=(
 )
 
 readonly desktop_files
-
-# A expansão da variável é modificada para se obter somente o nome do arquivo a
-# partir do caminho completo
-printf "\nTrusting .desktop files\n"
-for dfile in "${desktop_files[@]}"; do
-	if [ -f "${dfile}" ]; then
-		cp "${dfile}" /home/icpc/Desktop
-		su icpc --command="dbus-launch gio set /home/icpc/Desktop/${dfile##*/} \"metadata::trusted\" true"
-		printf "Trusted '%s'\n" "/home/icpc/Desktop/${dfile##*/}"
-	fi
-done
 printf "OK\n"
 
 # Bloquear a execução do diálogo de boas vindas no primeiro login do usuário
@@ -124,8 +111,22 @@ printf "\nChanging owner fromm root to icpc\n"
 chown -R icpc:users /home/icpc
 printf "OK\n"
 
-printf "\nAllowing .desktop files to be executed\n"
-chmod 755 /home/icpc/Desktop/*
+# Os atalhos precisam ser marcados como confiáveis na base de dados do GIO, e
+# para isso, o DBUS deve estar funcionando, e o usuário que usará os atalhos
+# deve ser o responsável por essa ação
+# A expansão da variável é modificada para se obter somente o nome do arquivo a
+# partir do caminho completo
+printf "\nTrusting .desktop files\n"
+for dfile in "${desktop_files[@]}"; do
+	if [ -f "${dfile}" ]; then
+		cp --verbose "${dfile}" /home/icpc/Desktop
+		chown icpc:users "/home/icpc/Desktop/${dfile##*/}"
+		chmod 755 "/home/icpc/Desktop/${dfile##*/}"
+		systemd-run --pipe --wait --user --machine 'icpc@.host' \
+			gio 'set' "/home/icpc/Desktop/${dfile##*/}" 'metadata::trusted' 'true'
+		printf "Trusted '%s'\n" "/home/icpc/Desktop/${dfile##*/}"
+	fi
+done
 printf "OK\n"
 
 printf "\nRemoving temporary files\n"
