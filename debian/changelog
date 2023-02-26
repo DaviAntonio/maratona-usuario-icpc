@@ -1,3 +1,12 @@
+maratona-usuario-icpc (20230226) jammy; urgency=medium
+
+  * Ignore vim swap files
+  * Fix extra copy of the editores-config directory
+  * Fix .desktop trusting process
+  * Replace custom .desktop twith the standard one
+
+ -- Davi Antônio da Silva Santos <antoniossdavi@gmail.com>  Sun, 26 Feb 2023 15:45:27 -0300
+
 maratona-usuario-icpc (20230113) jammy; urgency=medium
 
   * Depend on native packages instead of flatpak
