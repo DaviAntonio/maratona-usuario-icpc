@@ -1,0 +1,6 @@
+#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
+#Fri Sep 08 23:37:19 BRT 2023
+kotlin-stdlib-1.9.0-javadoc.jar>central=
+kotlin-stdlib-1.9.0-sources.jar>central=
+kotlin-stdlib-1.9.0.jar>central=
+kotlin-stdlib-1.9.0.pom>central=
