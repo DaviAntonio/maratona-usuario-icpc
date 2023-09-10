@@ -1,3 +1,13 @@
+maratona-usuario-icpc (20230909) jammy; urgency=medium
+
+  * Limit VSCode C/C++ cache and disable vim extension
+  * Update maven artifacts for kotlin 1.9
+  * Update consent options for Jetbrains IDEs
+  * Update user preferences for Jetbrains 2023.2
+  * Update Jetbrains configurations for 2023.2
+
+ -- Davi Antônio da Silva Santos <antoniossdavi@gmail.com>  Sun, 10 Sep 2023 15:46:17 -0300
+
 maratona-usuario-icpc (20230226) jammy; urgency=medium
 
   * Ignore vim swap files
