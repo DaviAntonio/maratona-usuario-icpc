@@ -2,5 +2,6 @@
 	"C_Cpp.intelliSenseCacheSize": 256,
 	"vim.disableExtension": true,
 	"telemetry.telemetryLevel": "off",
-	"workbench.enableExperiments": false
+	"workbench.enableExperiments": false,
+	"update.mode": "none"
 }
