@@ -3,5 +3,6 @@
 	"vim.disableExtension": true,
 	"telemetry.telemetryLevel": "off",
 	"workbench.enableExperiments": false,
-	"update.mode": "none"
+	"update.mode": "none",
+	"extensions.autoUpdate": false
 }
