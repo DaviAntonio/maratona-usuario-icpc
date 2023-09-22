@@ -1,3 +1,22 @@
+maratona-usuario-icpc (20230913) jammy; urgency=medium
+
+  * Attempt to disable VSCode telemetry
+  * Prevent VSCode from experimenting on user's machine
+  * Disable VSCode auto-updates
+  * Disable VSCode extension auto-updates
+
+ -- Davi Antônio da Silva Santos <antoniossdavi@gmail.com>  Wed, 13 Sep 2023 16:23:47 -0300
+
+maratona-usuario-icpc (20230909) jammy; urgency=medium
+
+  * Limit VSCode C/C++ cache and disable vim extension
+  * Update maven artifacts for kotlin 1.9
+  * Update consent options for Jetbrains IDEs
+  * Update user preferences for Jetbrains 2023.2
+  * Update Jetbrains configurations for 2023.2
+
+ -- Davi Antônio da Silva Santos <antoniossdavi@gmail.com>  Sun, 10 Sep 2023 15:46:17 -0300
+
 maratona-usuario-icpc (20230226) jammy; urgency=medium
 
   * Ignore vim swap files
