@@ -1,3 +1,9 @@
+maratona-usuario-icpc (20231014) jammy; urgency=medium
+
+  * Fix VSCode insistent keyring creation requests
+
+ -- Davi Antônio da Silva Santos <antoniossdavi@gmail.com>  Sat, 14 Oct 2023 22:00:36 -0300
+
 maratona-usuario-icpc (20230913) jammy; urgency=medium
 
   * Attempt to disable VSCode telemetry
