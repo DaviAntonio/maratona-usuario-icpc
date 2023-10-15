@@ -1,0 +1,25 @@
+// This configuration file allows you to pass permanent command line arguments to VS Code.
+// Only a subset of arguments is currently supported to reduce the likelihood of breaking
+// the installation.
+//
+// PLEASE DO NOT CHANGE WITHOUT UNDERSTANDING THE IMPACT
+//
+// NOTE: Changing this file requires a restart of VS Code.
+{
+	// Use software rendering instead of hardware accelerated rendering.
+	// This can help in cases where you see rendering issues in VS Code.
+	// "disable-hardware-acceleration": true,
+
+	// Allows to disable crash reporting.
+	// Should restart the app if the value is changed.
+	"enable-crash-reporter": false,
+
+	// Unique id used for correlating crash reports sent from this instance.
+	// Do not edit this value.
+	"crash-reporter-id": "99912e14-c415-4d04-88d9-05b00b571ee7",
+	// Stops VSCode constant demands to create a keyring
+	// We won't allow any secrets to be installed on the contestants' machines
+	// so the hard-wired password used to store keys in the basic store mode
+	// should not be a problem
+	"password-store": "basic",
+}
