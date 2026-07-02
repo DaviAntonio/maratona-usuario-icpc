@@ -1,3 +1,16 @@
+maratona-usuario-icpc (20260701) noble; urgency=medium
+
+  * Replace CLion 2024.3 with 2026.1
+  * Replace IntelliJ Idea 2024.3 with 2026.1
+  * Replace PyCharm 2024.3 with 2026.1
+  * Update Jetbrains IDEs for 2026.1
+  * Remove useless Jetbrains machine id file
+  * Update Jetbrains consent file for 2026.1
+  * Replace Kotlin 2.1.10 with 2.3.20 for Idea 2026.1
+  * Update VSCode settings
+
+ -- Davi Antônio da Silva Santos <antoniossdavi@gmail.com>  Wed, 01 Jul 2026 22:23:41 -0300
+
 maratona-usuario-icpc (20250502) noble; urgency=medium
 
   * Replace Kotlin 1.9.0 with 2.1.0
