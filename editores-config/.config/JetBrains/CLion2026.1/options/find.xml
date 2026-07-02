@@ -1,0 +1,27 @@
+<application>
+  <component name="FindSettings">
+    <mask>*.css</mask>
+    <mask>*.html</mask>
+    <mask>*.xml</mask>
+    <mask>*.cmake</mask>
+    <mask>*..txt</mask>
+    <mask>*.c++m</mask>
+    <mask>*.mm</mask>
+    <mask>*.usf</mask>
+    <mask>*.ixx</mask>
+    <mask>*.ii</mask>
+    <mask>*.cppm</mask>
+    <mask>*.c++</mask>
+    <mask>*.cxx</mask>
+    <mask>*.cu</mask>
+    <mask>*.m</mask>
+    <mask>*.cp</mask>
+    <mask>*.i</mask>
+    <mask>*.c</mask>
+    <mask>*.cc</mask>
+    <mask>*.mxx</mask>
+    <mask>*.ccm</mask>
+    <mask>*.cxxm</mask>
+    <mask>*.cpp</mask>
+  </component>
+</application>

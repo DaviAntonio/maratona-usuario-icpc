@@ -1,30 +1,45 @@
 <application>
+  <component name="LangManager">
+    <option name="languageName" value="C++" />
+  </component>
   <component name="NotRoamableUiSettings">
     <option name="presentationModeIdeScale" value="1.75" />
   </component>
   <component name="PropertyService"><![CDATA[{
   "keyToString": {
+    "Migrate.Cfg.Render.Doc": "true",
     "Rad.Init.Cfg.1": "true",
+    "RunOnceActivity.AIPromoWindowAdvisorPreheat": "true",
     "ask.about.ctrl.y.shortcut.v2": "true",
-    "experimental.ui.used.version": "243.25659.42",
+    "experimental.ui.first.switch": "true",
+    "experimental.ui.on.first.startup": "true",
+    "experimental.ui.switch": "true",
+    "experimental.ui.used.version": "261.23567.135",
     "fileTypeChangedCounter": "1",
     "fontSizeToResetConsole": "13.0",
     "fontSizeToResetEditor": "13.0",
-    "input.method.disabler.muted": "true",
-    "previousColorScheme": "_@user_Dark",
-    "registry.to.advanced.settings.migration.build": "CL-243.25659.42"
+    "ide.islands.ab3": "true",
+    "previousColorScheme": "_@user_Islands Dark",
+    "registry.to.advanced.settings.migration.build": "CL-261.23567.135",
+    "trial.state.last.availability.check": "0"
   },
   "keyToStringList": {
     "fileTypeDetectors": [
       "com.intellij.ide.scratch.ScratchFileServiceImpl$Detector",
-      "com.intellij.docker.dockerFile.DockerFileTypeDetector",
+      "com.intellij.database.vfs.DbStorageFileType$Detector",
       "com.jetbrains.rider.cpp.fileType.CppHeaderFileTypeDetector",
       "com.intellij.javascript.debugger.sourcemap.SourceMapFileType$MyFileTypeDetector",
-      "com.intellij.database.vfs.DbStorageFileType$Detector",
       "com.jetbrains.nodejs.util.NodeFileTypeDetector$JavaScriptFileTypeDetector",
       "com.jetbrains.nodejs.util.NodeFileTypeDetector$TypeScriptFileTypeDetector",
+      "com.intellij.docker.dockerFile.DockerFileTypeDetector",
       "org.jetbrains.plugins.textmate.TextMateFileType$TextMateFileDetector"
     ]
+  }
+}]]></component>
+  <component name="ReworkedTerminalUsage"><![CDATA[{
+  "firstIdeSessionMoment": {
+    "type": "org.jetbrains.plugins.terminal.TerminalFirstIdeSessionMoment.Version",
+    "build": "CL-261.23567.135"
   }
 }]]></component>
 </application>

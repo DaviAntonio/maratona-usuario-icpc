@@ -1,9 +1,0 @@
-<application>
-  <component name="AdvancedSettings">
-    <option name="settings">
-      <map>
-        <entry key="clion.use.radler" value="true" />
-      </map>
-    </option>
-  </component>
-</application>
