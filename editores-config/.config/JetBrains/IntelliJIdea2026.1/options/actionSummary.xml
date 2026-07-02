@@ -1,0 +1,16 @@
+<application>
+  <component name="ActionsLocalSummary">
+    <e n="CloseProject">
+      <i c="1" l="1780973596233" />
+    </e>
+    <e n="WelcomeScreen.CreateNewProject">
+      <i c="1" l="1780973541444" />
+    </e>
+    <e n="WelcomeScreen.RemoveSelected">
+      <i c="1" l="1780973603099" />
+    </e>
+    <e n="com.intellij.openapi.wm.impl.customFrameDecorations.header.toolbar.MainMenuButton$ShowMenuAction">
+      <i c="1" l="1780973594954" />
+    </e>
+  </component>
+</application>
